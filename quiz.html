@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  width: 100%;
+  align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="citizenconnect.php" id="#form" method="POST" name="#form">
+<div class="content">
+  <div class="container">
+    <h1>Quiz</h1>
+    <p>Test your skills on array basics.</p>
+    <hr>
+
+	  <label for="Gender"><b>1)<br>
+	  int main() <br>
+{ <br>
+  int a[] = {1, 2, 3, 4, 5, 6}; <br>
+  int *ptr = (int*)(&a+1); <br>
+  printf("%d ", *(ptr-1) ); <br>
+  return 0; <br>
+}<br>
+What is the output?</b></label><br>
+    <input type="radio"> 1<br>
+    <input type="radio"> 2<br>
+    <input type="radio"> 6<br><br>
+    <label for="Gender"><b>2)<br>
+	Which of the following is true about arrays in C.</b></label><br>
+    <input type="radio">For every type T, there can be an array of T.<br>
+    <input type="radio"> For every type T except void and function type, there can be an array of T.<br>
+	   <input type="radio"> 2D arrays are stored in column major form<br><br>
+    <label for="Gender"><b>3)<br>
+	Which of the following declares an array of int named img? </b></label><br>
+    <input type="radio">  int img;<br>
+    <input type="radio">  int[] img;<br>
+	<input type="radio">  int img = int[];
+<br>
+    
+    <input type="radio"> new int img[];<br><br>
+  
+    <input id='btn' name="submit" type='submit' value='Submit Quiz' class="registerbtn">
+    <button type="reset" class="registerbtn">Cancel</button>
+  </div
+</div>
+</form>
+
+</body>
+</html>
